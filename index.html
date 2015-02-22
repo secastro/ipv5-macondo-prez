@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Status of IPv5 deployment in Macondo</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Status of IPv5 deployment in Macondo">
+  <meta name="author" content="Sebastian Castro">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Status of IPv5 deployment in Macondo</h1>
+    <h2>Because new technologies are important</h2>
+    <p>Sebastian Castro<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Why is it important?</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>IPv4 addresses are going extinct</li>
+<li>IPv5 it&#39;s been around for quite some time</li>
+<li>The Buendia family requires data to take an informed decision</li>
+<li>Being a magical place doesn&#39;t mean you have to live in the past</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Methodology</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Every month each citizen of Macondo receives a survey with four questions:
+
+<ul>
+<li>Do you have a domain?</li>
+<li>Does it have a web site with IPv5?</li>
+<li>Does it have a mail server with IPv5?</li>
+<li>Does it have a dns server with IPv5?</li>
+</ul></li>
+<li>Answers are collected, compiled, cleaned and counted, then saved into a CSV file</li>
+<li>The data sits there in storage, until now</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The application</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Latest version of the data is loaded into the application</li>
+<li>Different users can explore different counters by selecting them using a checkbox.</li>
+<li>To effectively measure growth, the <em>normalize</em> option is available (<em>Display as percentage</em>)</li>
+<li>To provide a clear idea if a given metric is growing, a regression line can be overlaid on the plot (<em>Include Linear Regression?</em> option)</li>
+</ol>
+
+<p>Test the application at <a href="https://secastro.shinyapps.io/Project/">https://secastro.shinyapps.io/Project/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>The data</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">summary(data2)
+</code></pre>
+
+<pre><code>##      Month                 DNS             Mail        total_domain   
+##  Min.   :2013-08-01   Min.   :60472   Min.   :35168   Min.   :536255  
+##  1st Qu.:2013-12-01   1st Qu.:75050   1st Qu.:36961   1st Qu.:546148  
+##  Median :2014-05-01   Median :79390   Median :37675   Median :551028  
+##  Mean   :2014-04-24   Mean   :78878   Mean   :37909   Mean   :558055  
+##  3rd Qu.:2014-09-01   3rd Qu.:83434   3rd Qu.:38393   3rd Qu.:552411  
+##  Max.   :2015-02-01   Max.   :90604   Max.   :42621   Max.   :601206  
+##       Web      
+##  Min.   :5498  
+##  1st Qu.:6264  
+##  Median :6712  
+##  Mean   :6596  
+##  3rd Qu.:6919  
+##  Max.   :7452
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Why is it important?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Methodology'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The application'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The data'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
